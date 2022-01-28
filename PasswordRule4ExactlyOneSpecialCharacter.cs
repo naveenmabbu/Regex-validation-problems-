@@ -9,7 +9,7 @@ namespace UserRegistration_Methods_In_Regex
 {
     internal class PasswordRule4ExactlyOneSpecialCharacter
     {
-        public static string REGEX_Password4 = "^[A-Z]+[A-Z a-z]{5,}[!.*@#$%^&+=][0-9]+$"; //Programing@123
+        public static string REGEX_Password4 = "^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{8,}$"; //Programing@123
 
         public bool ValidatePassword4(string password)
         {
